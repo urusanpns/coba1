@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Absensi Pegawai</h1>
+
+        <!-- Form Absensi -->
+        <label for="nama">Pilih Nama:</label>
+        <select id="nama">
+            <option value="Nama 1">Nama 1</option>
+            <option value="Nama 2">Nama 2</option>
+            <option value="Nama 3">Nama 3</option>
+        </select>
+        
+        <label for="status">Status:</label>
+        <select id="status">
+            <option value="Hadir">Hadir</option>
+            <option value="Izin">Izin</option>
+            <option value="Sakit">Sakit</option>
+            <option value="Alpa">Alpa</option>
+            <option value="Cuti">Cuti</option>
+        </select>
+        
+        <label for="hari">Jumlah Hari:</label>
+        <select id="hari">
+            <option value="1">1 Hari</option>
+            <option value="2">2 Hari</option>
+            <option value="3">3 Hari</option>
+            <!-- Add more days here -->
+            <option value="365">365 Hari</option>
+        </select>
+        
+        <button id="absenButton">Absen</button>
+
+        <!-- Daftar Absensi -->
+        <div id="absensiList">
+            <h2>Daftar Absensi</h2>
+            <!-- Data absensi akan tampil di sini -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
