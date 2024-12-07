@@ -1,14 +1,21 @@
-// Initialize Firebase
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAJ8vxOZ6Gx7N0cfidTPuS2EkDHS5R4PXQ",
-    authDomain: "linkabsen-bb38f.firebaseapp.com",
-    projectId: "linkabsen-bb38f",
-    storageBucket: "linkabsen-bb38f.firebasestorage.app",
-    messagingSenderId: "909980411728",
-    appId: "1:909980411728:web:b2d154a57310561fa1ae55"
+  apiKey: "AIzaSyAJ8vxOZ6Gx7N0cfidTPuS2EkDHS5R4PXQ",
+  authDomain: "linkabsen-bb38f.firebaseapp.com",
+  databaseURL: "https://linkabsen-bb38f-default-rtdb.firebaseio.com",
+  projectId: "linkabsen-bb38f",
+  storageBucket: "linkabsen-bb38f.firebasestorage.app",
+  messagingSenderId: "909980411728",
+  appId: "1:909980411728:web:b2d154a57310561fa1ae55"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 const db = firebase.firestore(app);
 
 // Get elements
